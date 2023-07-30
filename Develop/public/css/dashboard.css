@@ -1,0 +1,34 @@
+.post-conatiner {
+    transition: background-color 0.3s;
+}
+
+.post-conatiner:hover {
+    border-right: 1em solid #656563;
+    background-color: rgba(126, 126, 126, 02);
+    border-radius: 0.5em;
+}
+
+body {
+    background-image: uerl('/images/INSERT'); /*INSERT IMAGE PATH*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* responsive features */
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+@media screen and (max-width: 767px) and (orientation: portait) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi ) {}
+
+@media (color-gamut: srgb) {}
