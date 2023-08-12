@@ -1,0 +1,26 @@
+<main class="container mt-5">
+    <h1 class="mn-4">Edit Post</h1>
+    <form class="updated-post-form" class="mb-3">
+        <div class="mb-3">
+            <label for="title-update-post" class="form-label">Title</label>
+            <input
+                type="text"
+                class="form-control"
+                id="title-update-post"
+                placeholder="Post Title"
+                value="{{title}}"
+            />
+        </div>
+        <div class="mb-3">
+            <label for="content-updated-post" class="form-label">Content</label>
+            <textarea
+                class="form-control"
+                id="content-update-post"
+                rows="3"
+                placeholder="Post Content"
+            >{{content}}</textarea>
+        </div>
+        <button type="submit" id="update-post" class="btn btn-primary">Update Post</button>
+        <button type="button" id="delete-post" class="btn btn-danger">Delete POst</button>
+    </form>
+</main>

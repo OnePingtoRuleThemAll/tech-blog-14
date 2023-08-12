@@ -1,9 +1,9 @@
 // handler fucntion for login form submission
-const blogLoginFormHandler = async (event) => {
+const crochetLoginFormHandler = async (event) => {
     event.preventDefault();
 
-    const username = document.querySelector('#username-login').value.trim();
-    const password = document.querySelector('#password-login').value.trim();
+    const username = document.querySelector('#username-crochet-login').value.trim();
+    const password = document.querySelector('#password-crochet-login').value.trim();
 
     if (username && password) {
 
@@ -22,7 +22,7 @@ const blogLoginFormHandler = async (event) => {
     }
 };
 
-const blogLoginForm = document.querySelector('.blog-login-form');
-if (blogLoginForm) {
-    blogLoginForm.addEventListener('submit', blogLoginFormHandler);
+const crochetLoginForm = document.querySelector('.crochet-login-form');
+if (crochetLoginForm) {
+    crochetLoginForm.addEventListener('submit', crochetLoginFormHandler);
 }

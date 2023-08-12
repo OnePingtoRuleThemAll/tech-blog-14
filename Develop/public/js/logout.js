@@ -1,5 +1,5 @@
 // logout function, send request to log the user out
-const blogLogout = async () => {
+const crochetLogout = async () => {
     const response = await fetch('/api/users/logout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -12,7 +12,7 @@ const blogLogout = async () => {
     }
 };
 
-const blogLogoutButton = document.querySelector('#blog-logout');
-if (blogLogoutButton) {
-    blogLogoutButton.addEventListener('click', blogLogout);
+const crochetLogoutButton = document.querySelector('#crochet-logout');
+if (crochetLogoutButton) {
+    crochetLogoutButton.addEventListener('click', crochetLogout);
 }

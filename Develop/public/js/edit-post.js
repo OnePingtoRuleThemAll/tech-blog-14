@@ -4,12 +4,12 @@ const post_id = window.location.toString().split("/")[
 ];
 
 //update the post
-const updateBlogPostFormHandler = async (event) => {
+const updateCrochetPostFormHandler = async (event) => {
     event.preventDefault();
 
-    const title = document.querySeelector("#title-update-blog-post").value.trim();
+    const title = document.querySeelector("#title-update-crochet-post").value.trim();
     const content = document
-        .querySelector("#content-update-blog-post")
+        .querySelector("#content-update-crochet-post")
         .value.trim();
 
         if (title && content) {
@@ -28,7 +28,7 @@ const updateBlogPostFormHandler = async (event) => {
 };
 
 // delete post
-const deleteBlogPostFormHandler = async (event) => {
+const deleteCrochetPostFormHandler = async (event) => {
     event.preventDefault();
 
     const response = await fetch (`/api/posts/${post_id}`, {
@@ -43,14 +43,14 @@ const deleteBlogPostFormHandler = async (event) => {
 };
 
 //event lsteners
-const updateBlogPostButton = document.querySelector("#update-blog-post");
+const updateCrochetPostButton = document.querySelector("#update-crochet-post");
 
-if (updateBlogPost) {
-    updateBlogPostButton.addEventListener("click", updateBlogPostFormHandler);
+if (updateCrochetPost) {
+    updateCrochetPostButton.addEventListener("click", updateCrochetPostFormHandler);
 }
 
-const deleteBlogPostButton = document.querySelector("#delete-blog-post");
+const deleteCrochetPostButton = document.querySelector("#delete-crochet-post");
 
-if (deleteBlogPostButton) {
-    deleteBlogPostButton.addEventListener("click", deleteBlogPostFormHandler);
+if (deleteCrochetPostButton) {
+    deleteCrochetPostButton.addEventListener("click", deleteCrochetPostFormHandler);
 }
